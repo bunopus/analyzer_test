@@ -1,0 +1,49 @@
+name: analyzer_test
+description: Sample App for Analyzer Bug reproduce
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: yury.yufimov <email@example.com>
+
+environment:
+  sdk: '>=2.0.0-dev.55.0 <2.0.0'
+
+dependencies:
+#  angular:
+#    git:
+#      ref: ng-compiler-for-dart20
+#      url: git@git.wrke.in:front-mirror/angular.git
+#      path: angular
+#
+#  angular_router:
+#    git:
+#      ref: ng-compiler-for-dart20
+#      url: git@git.wrke.in:front-mirror/angular.git
+#      path: angular_router
+#
+#  angular_forms:
+#    git:
+#      ref: ng-compiler-for-dart20
+#      url: git@git.wrke.in:front-mirror/angular.git
+#      path: angular_forms
+#
+#  angular_compiler:
+#    git:
+#      ref: ng-compiler-for-dart20
+#      url: git@git.wrke.in:front-mirror/angular.git
+#      path: angular_compiler
+
+dev_dependencies:
+  build_runner: 0.9.1
+#  build_test: ^0.10.2
+  build_modules: 0.2.3
+  build_web_compilers: 0.4.0+4
+  source_gen: ^0.8.3
+#  test: ^0.12.38
+
+dependency_overrides:
+  analyzer:
+    path: pkg/analyzer
+  front_end:
+    path: pkg/front_end
+  build_resolvers:
+    path: pkg/build_resolvers
